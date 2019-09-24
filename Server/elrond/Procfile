@@ -1,0 +1,1 @@
+web: gunicorn elrond.wsgi --log-file -

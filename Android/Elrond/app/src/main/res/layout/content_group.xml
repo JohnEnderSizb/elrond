@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Group"
+    tools:showIn="@layout/activity_group">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:id="@+id/group_webview"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_scrollFlags="enterAlways|snap"
+        android:background="@drawable/dropshadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="1.5sp"
+                android:background="#FFF"
+                android:padding="3dp"
+                android:id="@+id/message_edit"
+                android:hint="Type a message..."
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"/>
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_send"
+                android:layout_marginLeft="1dp"
+                android:onClick="sendMessage"
+                android:layout_marginRight="1dp"
+                android:padding="2dp"
+                android:tint="#FFF"
+                android:background="#3F8524"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

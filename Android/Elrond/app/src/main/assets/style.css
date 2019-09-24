@@ -1,0 +1,203 @@
+body {
+    font-size: 1em;
+}
+
+
+.peep {
+    border-bottom: 1px solid #CAC6C6;
+    position: relative;
+    padding-bottom:  0.25em;
+    padding-top: 0.25em;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+
+  .peep-img {
+    height: 4.5em;
+    width: 5em;
+    margin-right: 0.5em;
+  }
+
+  .peep div {
+    display: inline-block;
+  }
+
+  .peep-name {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .peep-status {
+    color: #42a0a0;
+  }
+
+  #picture-popup {
+    position: fixed;
+    z-index: 10;
+    top: 10vh;
+    width: 90vw;
+    height: 60vh;
+    left: 5vw;
+    right: 5vw;
+    background-color: #000000f5;
+    display: none;
+    
+
+  }
+
+  .modal-content {
+    margin-top: 40%;
+    width: 90%;
+    margin: auto;
+  }
+
+  .ex {
+      color: red;
+      font-weight: 400;
+      font-size: 1.5em;
+      cursor: wait;
+      
+  }
+
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s;
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.post {
+  border-bottom: 1px solid #CAC6C6;
+  color: #000;
+}
+
+.post .time {
+  color: #CAC6C6
+}
+
+.post .link {
+  color: #38A1F3;
+  font-style: italic;
+}
+
+.post .user {
+  font-weight: bold;
+}
+
+.tweet {
+  color: rgb(24, 23, 23);
+}
+
+.post .main {
+  padding: 5xp;
+}
+
+.chat {
+  width: 98%;
+}
+
+.bubble{
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #B2B2B2;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  vertical-align: top;
+}
+
+.bubble::before {
+  background-color: #F2F2F2;
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  position: absolute;
+  top: 11px;
+  transform:             rotate( 29deg ) skew( -35deg );
+      -moz-transform:    rotate( 29deg ) skew( -35deg );
+      -ms-transform:     rotate( 29deg ) skew( -35deg );
+      -o-transform:      rotate( 29deg ) skew( -35deg );
+      -webkit-transform: rotate( 29deg ) skew( -35deg );
+  width:  20px;
+}
+
+
+.bubblec{
+  background-color: #7ebae7;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #B2B2B2;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  vertical-align: top;
+}
+
+.bubblec::before {
+  background-color: #7ebae7;
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  position: absolute;
+  top: 11px;
+  transform:             rotate( 29deg ) skew( -35deg );
+      -moz-transform:    rotate( 29deg ) skew( -35deg );
+      -ms-transform:     rotate( 29deg ) skew( -35deg );
+      -o-transform:      rotate( 29deg ) skew( -35deg );
+      -webkit-transform: rotate( 29deg ) skew( -35deg );
+  width:  20px;
+}
+
+.me {
+  float: left;   
+  margin: 5px 35px 5px 17px;
+}
+
+.me::before {
+  box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  left: -9px;           
+}
+
+.you {
+  float: right;    
+  margin: 5px 17px 5px 35px;
+  background: #7ebae7;        
+}
+
+.you::before {
+  box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+  right: -9px;    
+}
+
+.sender-tag {
+  color: #FF0000;
+}
+
+
+#chat-body_ {
+   background: rgb(70,107,72);
+   background: radial-gradient(circle, rgba(70,107,72,1) 10%, rgba(35,76,38,1) 90%, rgba(25,64,16,1) 99%);
+}
+
+.hidden
+{
+    display: none;
+}
+
+.time {
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+       font-family: "Times New Roman", Times, serif;
+  }
